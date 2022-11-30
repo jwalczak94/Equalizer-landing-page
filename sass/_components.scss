@@ -1,0 +1,100 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  transition: 0.3s;
+
+  img {
+    display: inline-block;
+    margin-right: 7px;
+    height: 2rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-ios {
+    background-color: $dark;
+    color: $light;
+
+    &:hover {
+      background-color: $cyan;
+    }
+  }
+
+  &-android {
+    background-color: $light;
+    color: $dark;
+
+    &:hover {
+      background-color: $orange-light;
+    }
+  }
+}
+
+.plan-preview {
+  background-color: $dark;
+  border-radius: 10px;
+  height: 60rem;
+  max-width: 111rem;
+  width: 90vw;
+  margin-bottom: 20rem;
+
+  background-image: url(../images/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top -40px left 335px;
+
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: -21rem;
+    left: 10rem;
+
+    max-width: 312px;
+  }
+}
+
+.card {
+  display: inline-block;
+  max-width: 44.5rem;
+  min-width: 40rem;
+  width: 40%;
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  border-radius: 10px;
+  background-color: $orange-dark;
+  color: $light;
+
+  position: absolute;
+  top: 9rem;
+  right: 9.5rem;
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    margin: 3.9rem 0 4.6rem;
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+
+    span {
+      font-weight: 400;
+      line-height: 3.2rem;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  &__buttons {
+    a:nth-of-type(1) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}

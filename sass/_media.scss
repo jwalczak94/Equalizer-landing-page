@@ -1,0 +1,176 @@
+@media screen and (max-width: $bp-tablet) {
+  //UTILITIES
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.7px;
+
+    margin-bottom: 2.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+
+    margin-bottom: 1.2rem;
+  }
+
+  .text {
+    &-1 {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  //BASE
+  body {
+    background-image: url(../images/bg-main-tablet.png);
+    background-position: top -250px left -350px;
+  }
+
+  //HEADER
+  .header {
+    background-position: top -40px right -50px;
+    margin: 0 auto 25rem;
+    padding: 6rem 0 0 3.9rem;
+
+    &__logo {
+      margin-bottom: 9.5rem;
+    }
+
+    &__description {
+      max-width: 69%;
+    }
+  }
+
+  //COMPONENTS
+  .plan-preview {
+    margin-bottom: 18rem;
+    background-position: top -30px left 230px;
+    background-size: 35%;
+
+    &__img {
+      position: absolute;
+      top: -14rem;
+      left: 6.4rem;
+
+      max-width: 270px;
+    }
+  }
+
+  .card {
+    width: 40%;
+    padding: 4.8em;
+
+    top: 15rem;
+    right: 5.8rem;
+
+    &__price {
+      margin: 3.6rem 0.6rem 3.2rem;
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  //FOOTER
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+
+    margin: 0 auto 8.5rem auto;
+
+    &__logo {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  //UTILITIES
+  h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.45px;
+
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    &-2 {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  //BASE
+  body {
+    background-image: url(../images/bg-main-mobile.png);
+    background-position: top -100px left 0;
+  }
+
+  //HEADER
+  .header {
+    background-image: none;
+    margin: 0 auto 16.5rem;
+    padding: 4rem 0 0 2.4rem;
+
+    &__logo {
+      margin-bottom: 12.5rem;
+    }
+
+    &__description {
+      max-width: 94%;
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+
+  //COMPONENTS
+  .plan-preview {
+    width: 100vw;
+    margin-bottom: 39rem;
+    background-position: top 0 center;
+    background-size: 75%;
+
+    &__img {
+      position: absolute;
+      top: -10rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      max-width: 210px;
+    }
+  }
+
+  .card {
+    min-width: 100%;
+    padding: 4.8em 3.8rem 4.8rem 3.8rem;
+
+    top: 38rem;
+    right: 0;
+  }
+
+  //FOOTER
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+
+    width: 85vw;
+    margin: 0 auto 8rem auto;
+
+    &__logo {
+      grid-column: 1/-1;
+    }
+  }
+
+  .socials {
+    margin-left: 0;
+    margin-top: 3.2rem;
+    display: flex;
+  }
+}

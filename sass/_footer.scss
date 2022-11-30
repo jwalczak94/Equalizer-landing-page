@@ -1,0 +1,26 @@
+.footer {
+  display: grid;
+  grid-template-columns: 25% 35% 40%;
+
+  width: 90vw;
+  max-width: 110rem;
+  margin: 0 auto 9rem auto;
+}
+
+.socials {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+
+  align-self: center;
+
+  &__item {
+    path {
+      transition: 0.3s;
+    }
+
+    :hover {
+      fill: $orange-dark;
+    }
+  }
+}

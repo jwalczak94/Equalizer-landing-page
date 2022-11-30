@@ -1,0 +1,347 @@
+/* line 12, sass/_base.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 20, sass/_base.scss */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+/* line 25, sass/_base.scss */
+body {
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top -250px left -250px;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: #191826;
+  text-rendering: optimizeSpeed; }
+
+/* line 36, sass/_base.scss */
+html,
+body {
+  min-height: 100%; }
+
+/* line 41, sass/_base.scss */
+img {
+  display: block;
+  max-width: 100%; }
+
+/* line 46, sass/_base.scss */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* line 53, sass/_base.scss */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; }
+
+/* line 63, sass/_base.scss */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 68, sass/_base.scss */
+ul,
+li {
+  list-style: none; }
+
+/* line 73, sass/_base.scss */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 1, sass/_header.scss */
+.header {
+  background-image: url(../images/bg-pattern-1.svg);
+  background-repeat: no-repeat;
+  background-position: top -40px right 0;
+  max-width: 144rem;
+  margin: 0 auto 32rem;
+  padding: 6rem 0 0 16.5rem; }
+  /* line 9, sass/_header.scss */
+  .header__logo {
+    margin-bottom: 12.5rem; }
+  /* line 13, sass/_header.scss */
+  .header__description {
+    max-width: 68%; }
+
+/* line 1, sass/_footer.scss */
+.footer {
+  display: grid;
+  grid-template-columns: 25% 35% 40%;
+  width: 90vw;
+  max-width: 110rem;
+  margin: 0 auto 9rem auto; }
+
+/* line 10, sass/_footer.scss */
+.socials {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+  align-self: center; }
+  /* line 18, sass/_footer.scss */
+  .socials__item path {
+    transition: 0.3s; }
+  /* line 22, sass/_footer.scss */
+  .socials__item :hover {
+    fill: #fa7352; }
+
+/* line 1, sass/_utilities.scss */
+h1 {
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 8.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 4rem; }
+
+/* line 10, sass/_utilities.scss */
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  margin-bottom: 2.2rem; }
+
+/* line 19, sass/_utilities.scss */
+.text-1 {
+  font-size: 2rem;
+  line-height: 3.4rem; }
+
+/* line 24, sass/_utilities.scss */
+.text-2 {
+  font-size: 1.6rem;
+  line-height: 2.6rem; }
+
+/* line 29, sass/_utilities.scss */
+.text-bold {
+  font-weight: 700; }
+
+/* line 1, sass/_components.scss */
+.btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  transition: 0.3s; }
+  /* line 12, sass/_components.scss */
+  .btn img {
+    display: inline-block;
+    margin-right: 7px;
+    height: 2rem; }
+  /* line 18, sass/_components.scss */
+  .btn:hover {
+    transform: scale(1.05); }
+  /* line 22, sass/_components.scss */
+  .btn-ios {
+    background-color: #191826;
+    color: #fcf9f8; }
+    /* line 26, sass/_components.scss */
+    .btn-ios:hover {
+      background-color: #65e2db; }
+  /* line 31, sass/_components.scss */
+  .btn-android {
+    background-color: #fcf9f8;
+    color: #191826; }
+    /* line 35, sass/_components.scss */
+    .btn-android:hover {
+      background-color: #ffba66; }
+
+/* line 41, sass/_components.scss */
+.plan-preview {
+  background-color: #191826;
+  border-radius: 10px;
+  height: 60rem;
+  max-width: 111rem;
+  width: 90vw;
+  margin-bottom: 20rem;
+  background-image: url(../images/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top -40px left 335px;
+  position: relative; }
+  /* line 55, sass/_components.scss */
+  .plan-preview__img {
+    position: absolute;
+    top: -21rem;
+    left: 10rem;
+    max-width: 312px; }
+
+/* line 64, sass/_components.scss */
+.card {
+  display: inline-block;
+  max-width: 44.5rem;
+  min-width: 40rem;
+  width: 40%;
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  border-radius: 10px;
+  background-color: #fa7352;
+  color: #fcf9f8;
+  position: absolute;
+  top: 9rem;
+  right: 9.5rem; }
+  /* line 78, sass/_components.scss */
+  .card__price {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 3.9rem 0 4.6rem;
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 5.2rem; }
+    /* line 88, sass/_components.scss */
+    .card__price span {
+      font-weight: 400;
+      line-height: 3.2rem;
+      letter-spacing: -0.2px; }
+  /* line 96, sass/_components.scss */
+  .card__buttons a:nth-of-type(1) {
+    margin-bottom: 1.6rem; }
+
+@media screen and (max-width: 75rem) {
+  /* line 3, sass/_media.scss */
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.7px;
+    margin-bottom: 2.8rem; }
+  /* line 11, sass/_media.scss */
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.2rem; }
+  /* line 19, sass/_media.scss */
+  .text-1 {
+    font-size: 1.8rem;
+    line-height: 2.8rem; }
+  /* line 26, sass/_media.scss */
+  body {
+    background-image: url(../images/bg-main-tablet.png);
+    background-position: top -250px left -350px; }
+  /* line 32, sass/_media.scss */
+  .header {
+    background-position: top -40px right -50px;
+    margin: 0 auto 25rem;
+    padding: 6rem 0 0 3.9rem; }
+    /* line 37, sass/_media.scss */
+    .header__logo {
+      margin-bottom: 9.5rem; }
+    /* line 41, sass/_media.scss */
+    .header__description {
+      max-width: 69%; }
+  /* line 47, sass/_media.scss */
+  .plan-preview {
+    margin-bottom: 18rem;
+    background-position: top -30px left 230px;
+    background-size: 35%; }
+    /* line 52, sass/_media.scss */
+    .plan-preview__img {
+      position: absolute;
+      top: -14rem;
+      left: 6.4rem;
+      max-width: 270px; }
+  /* line 61, sass/_media.scss */
+  .card {
+    width: 40%;
+    padding: 4.8em;
+    top: 15rem;
+    right: 5.8rem; }
+    /* line 68, sass/_media.scss */
+    .card__price {
+      margin: 3.6rem 0.6rem 3.2rem; }
+      /* line 71, sass/_media.scss */
+      .card__price span {
+        font-size: 2rem; }
+  /* line 78, sass/_media.scss */
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    margin: 0 auto 8.5rem auto; }
+    /* line 84, sass/_media.scss */
+    .footer__logo {
+      grid-column: 1/-1; } }
+
+@media screen and (max-width: 48em) {
+  /* line 92, sass/_media.scss */
+  h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.45px;
+    margin-bottom: 2rem; }
+  /* line 101, sass/_media.scss */
+  .text-2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+  /* line 108, sass/_media.scss */
+  body {
+    background-image: url(../images/bg-main-mobile.png);
+    background-position: top -100px left 0; }
+  /* line 114, sass/_media.scss */
+  .header {
+    background-image: none;
+    margin: 0 auto 16.5rem;
+    padding: 4rem 0 0 2.4rem; }
+    /* line 119, sass/_media.scss */
+    .header__logo {
+      margin-bottom: 12.5rem; }
+    /* line 123, sass/_media.scss */
+    .header__description {
+      max-width: 94%; }
+      /* line 126, sass/_media.scss */
+      .header__description p {
+        font-size: 1.6rem;
+        line-height: 2.6rem; }
+  /* line 134, sass/_media.scss */
+  .plan-preview {
+    width: 100vw;
+    margin-bottom: 39rem;
+    background-position: top 0 center;
+    background-size: 75%; }
+    /* line 140, sass/_media.scss */
+    .plan-preview__img {
+      position: absolute;
+      top: -10rem;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 210px; }
+  /* line 150, sass/_media.scss */
+  .card {
+    min-width: 100%;
+    padding: 4.8em 3.8rem 4.8rem 3.8rem;
+    top: 38rem;
+    right: 0; }
+  /* line 159, sass/_media.scss */
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    width: 85vw;
+    margin: 0 auto 8rem auto; }
+    /* line 166, sass/_media.scss */
+    .footer__logo {
+      grid-column: 1/-1; }
+  /* line 171, sass/_media.scss */
+  .socials {
+    margin-left: 0;
+    margin-top: 3.2rem;
+    display: flex; } }
+
+@keyframes card {
+  100% {
+    top: 15rem;
+    right: 5.8rem; } }

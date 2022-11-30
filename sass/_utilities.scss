@@ -1,0 +1,32 @@
+h1 {
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 8.8rem;
+  letter-spacing: -1px;
+
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+
+  margin-bottom: 2.2rem;
+}
+
+.text {
+  &-1 {
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+
+  &-2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+}

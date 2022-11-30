@@ -1,0 +1,77 @@
+//color variables
+$cyan: hsl(177, 68%, 64%);
+$orange-dark: hsl(12, 94%, 65%);
+$orange-light: hsl(33, 100%, 70%);
+$light: hsl(20, 33%, 98%);
+$dark: hsl(244, 23%, 12%);
+
+// RESPONSIVE BREAKPOINTS
+$bp-tablet: 75rem; //1200px
+$bp-mobile: 48em; //768px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top -250px left -250px;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: $dark;
+  text-rendering: optimizeSpeed;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

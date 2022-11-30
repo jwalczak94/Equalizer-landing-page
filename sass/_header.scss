@@ -1,0 +1,16 @@
+.header {
+  background-image: url(../images/bg-pattern-1.svg);
+  background-repeat: no-repeat;
+  background-position: top -40px right 0;
+  max-width: 144rem;
+  margin: 0 auto 32rem;
+  padding: 6rem 0 0 16.5rem;
+
+  &__logo {
+    margin-bottom: 12.5rem;
+  }
+
+  &__description {
+    max-width: 68%;
+  }
+}
